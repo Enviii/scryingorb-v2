@@ -11,8 +11,17 @@
 |
 */
 
-Route::get('/', function()
-{
-	$test = DB::select("select* from champions");
-	return $test;
-});
+Route::get('/', array(
+	'as' => 'home',
+	'uses' => 'HomeController@home'
+));
+
+Route::get('/getOldSale', array(
+	'as' => 'getOldSale',
+	'uses' => 'HomeController@getOldSale'
+));
+
+Route::get('/getCurrentSale', array(
+	'as' => 'getCurrentSale',
+	'uses' => 'HomeController@getCurrentSale'
+));
