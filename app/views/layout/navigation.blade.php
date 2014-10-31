@@ -12,6 +12,8 @@
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li class="hidden-xs hidden-sm"><a href="{{ URL::route('home') }}">Home</a></li>
+				<li class="hidden-xs hidden-sm"><a href="{{ URL::route('championHistory') }}">Champion History</a></li>
+				<li class="hidden-xs hidden-sm"><a href="{{ URL::route('skinHistory') }}">Skin History</a></li>
 
 			</ul>
 			<form class="navbar-form navbar-right" id="the-basics">

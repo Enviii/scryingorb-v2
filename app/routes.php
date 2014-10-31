@@ -25,3 +25,13 @@ Route::get('/getCurrentSale', array(
 	'as' => 'getCurrentSale',
 	'uses' => 'HomeController@getCurrentSale'
 ));
+
+Route::get('/skins/history', array(
+	'as' => 'skinHistory',
+	'uses' => 'SkinController@skinHistory'
+));
+
+Route::get('/champions/history', array(
+	'as' => 'championHistory',
+	'uses' => 'ChampionController@championHistory'
+));
